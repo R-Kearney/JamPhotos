@@ -1,9 +1,12 @@
 import os, sys
 import time
+from subprocess import *
+from align.align_dataset_mtcnn import main as align
 
 #Keep checking for new files into the Dropbox Camera folder
 
 path = "/root/Dropbox/Camera Uploads/"
+align_args = ['input_dir', '/var/www/jamphotos/scripts/tmp', 'output_dir', '/var']
 
 old_files = []
 
@@ -14,9 +17,9 @@ while(1):
 		for file in new_files:
 			if file not in old_files:
 				new_file = file
-
-				print(new_file)
-			
-		#do the thraining things
+				full_path = path+new_file
+				print(full_path)
+				align(full_path)
+				#do the thraining things
 
 				old_files.append(new_file)

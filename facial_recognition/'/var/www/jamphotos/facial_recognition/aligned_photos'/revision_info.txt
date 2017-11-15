@@ -1,0 +1,5 @@
+arguments: jamphotos.py
+--------------------
+git hash: b'e497475f6e631dc049dbd7d7fa5ed5724a1d290f'
+--------------------
+b'diff --git a/src/align/align_dataset_mtcnn.py b/src/align/align_dataset_mtcnn.py\nindex 8fc1bcc..a053294 100644\n--- a/src/align/align_dataset_mtcnn.py\n+++ b/src/align/align_dataset_mtcnn.py\n@@ -38,6 +38,7 @@ from time import sleep\n \n def main(args):\n     sleep(random.random())\n+    print(args)\n     output_dir = os.path.expanduser(args.output_dir)\n     if not os.path.exists(output_dir):\n         os.makedirs(output_dir)'

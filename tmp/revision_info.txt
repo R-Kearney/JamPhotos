@@ -1,0 +1,5 @@
+arguments: /root/facenet/src/align/align_dataset_mtcnn.py /root/Dropbox/Camera Uploads/2017-11-13 10.24.49.jpg /var/www/jamphotos/tmp --image_size 160 --margin 32
+--------------------
+git hash: b'e497475f6e631dc049dbd7d7fa5ed5724a1d290f'
+--------------------
+b''
